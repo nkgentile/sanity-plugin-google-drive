@@ -1,6 +1,6 @@
 {
   "name": "sanity-plugin-google-drive",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "Sanity plugin for Google Drive integration",
   "keywords": [
     "sanity",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:nkgentile/sanity-plugin-google-drive.git"
+    "url": "https://github.com/nkgentile/sanity-plugin-google-drive"
   },
   "license": "MIT",
   "author": "Noah Gentile <noah@sanity.io>",
@@ -71,7 +71,8 @@
     "react": "^18",
     "rimraf": "^3.0.2",
     "sanity": "^3.0.0",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "semantic-release": "^19.0.5"
   },
   "peerDependencies": {
     "react": "^18",
