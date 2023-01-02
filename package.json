@@ -16,6 +16,7 @@
   },
   "license": "MIT",
   "author": "Noah Gentile <noah@sanity.io>",
+  "type": "commonjs",
   "exports": {
     ".": {
       "types": "./lib/src/index.d.ts",
