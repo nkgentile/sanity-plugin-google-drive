@@ -48,7 +48,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@sanity/incompatible-plugin": "^1.0.4"
+    "@sanity/icons": "^2.2.0",
+    "@sanity/incompatible-plugin": "^1.0.4",
+    "@sanity/ui": "^1.0.5",
+    "react-google-drive-picker": "^1.2.0",
+    "react-icons": "^4.7.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
@@ -57,6 +61,8 @@
     "@sanity/pkg-utils": "^2.0.3",
     "@sanity/plugin-kit": "^2.2.0",
     "@sanity/semantic-release-preset": "^2.0.5",
+    "@types/google.picker": "^0.0.39",
+    "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.47.1",
     "@typescript-eslint/parser": "^5.47.1",
     "eslint": "^8.31.0",
