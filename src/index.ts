@@ -1,6 +1,6 @@
 import {definePlugin} from 'sanity'
 
-interface MyPluginConfig {
+interface GoogleDriveConfig {
   /* nothing here yet */
 }
 
@@ -9,17 +9,17 @@ interface MyPluginConfig {
  *
  * ```
  * import {defineConfig} from 'sanity'
- * import {myPlugin} from 'sanity-plugin-google-drive'
+ * import {googleDrive} from 'sanity-plugin-google-drive'
  *
  * export const defineConfig({
  *     //...
  *     plugins: [
- *         myPlugin()
+ *         googleDrive()
  *     ]
  * })
  * ```
  */
-export const myPlugin = definePlugin<MyPluginConfig | void>((config = {}) => {
+export const googleDrive = definePlugin<GoogleDriveConfig | void>((config = {}) => {
   // eslint-disable-next-line no-console
   console.log('hello from sanity-plugin-google-drive')
   return {
