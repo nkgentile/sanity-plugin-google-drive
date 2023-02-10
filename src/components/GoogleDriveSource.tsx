@@ -2,19 +2,8 @@
 import {useEffect, useState, useCallback} from 'react'
 import useDrivePicker from 'react-google-drive-picker'
 import type {CallbackDoc, PickerConfiguration} from 'react-google-drive-picker/dist/typeDefs'
-import type {AssetFromSource, AssetSourceComponentProps, File} from 'sanity'
-
-interface GoogleDriveFileAsset extends AssetFromSource {
-  kind: 'url'
-  value: File
-}
-
-function documentToFileAsset(document: CallbackDoc): GoogleDriveFileAsset {
-  return {
-    kind: 'url',
-    value: document,
-  }
-}
+import type {AssetFromSource, AssetSourceComponentProps} from 'sanity'
+import {documentToFileAsset} from '../helpers'
 
 type GoogleDrivePickerProps = AssetSourceComponentProps &
   Pick<PickerConfiguration, 'clientId' | 'developerKey'>

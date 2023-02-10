@@ -1,42 +1,9 @@
 import React from 'react'
-import {
-  defineField,
-  defineType,
-  type ObjectOptions,
-  type ObjectSchemaType,
-  type ObjectDefinition,
-  PreviewConfig,
-} from 'sanity'
+import {defineField, defineType} from 'sanity'
 import {DocumentIcon} from '@sanity/icons'
-import {GoogleDriveIcon} from './GoogleDriveIcon'
+import {GoogleDriveIcon} from '../components'
 
 export const FILE_ASSET = 'googleDrive.fileAsset' as const
-
-export interface GoogleDriveFileAssetOptions extends ObjectOptions {
-  layout?: 'embed' | null | undefined
-}
-
-export type GoogleDriveFileAssetDefinition = Omit<ObjectDefinition, 'type'> & {
-  type: typeof FILE_ASSET
-  options?: GoogleDriveFileAssetOptions
-}
-
-declare module 'sanity' {
-  export interface IntrinsicDefinitions {
-    'googleDrive.fileAsset': GoogleDriveFileAssetDefinition
-  }
-}
-
-export interface GoogleDriveFileAssetSchemaType extends ObjectSchemaType {
-  options?: GoogleDriveFileAssetOptions
-  preview: Required<
-    PreviewConfig<{
-      name: string
-      type: string
-      iconUrl: string
-    }>
-  >
-}
 
 // eslint-disable-next-line no-warning-comments
 // TODO: add validation

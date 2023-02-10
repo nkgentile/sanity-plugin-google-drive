@@ -1,6 +1,6 @@
 import React from 'react'
 import {Grid} from '@sanity/ui'
-import {AssetPreviewProps} from './AssetPreviewProps'
+import type {AssetPreviewProps} from '../types'
 import {GoogleDriveButton} from './GoogleDriveButton'
 
 export function AssetPreview(props: AssetPreviewProps) {

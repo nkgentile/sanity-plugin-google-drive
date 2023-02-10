@@ -1,4 +1,4 @@
-import React, {ComponentPropsWithoutRef} from 'react'
+import React, {type ComponentPropsWithoutRef} from 'react'
 
 type GoogleDriveIconProps = ComponentPropsWithoutRef<'svg'> & {src: string}
 
