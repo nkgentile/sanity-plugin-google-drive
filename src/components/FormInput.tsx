@@ -1,7 +1,7 @@
 import React, {lazy, memo, Suspense} from 'react'
 import type {InputProps} from 'sanity'
-import type {GoogleDrivePluginConfig} from './googleDrivePluginConfig'
-import {isGoogleDriveFileInputProps} from './isGoogleDriveFileInputProps'
+import type {GoogleDrivePluginConfig} from '../types'
+import {isGoogleDriveFileInputProps} from '../helpers'
 
 const GoogleDriveFileInput = lazy(() => import('./GoogleDriveFileInput'))
 

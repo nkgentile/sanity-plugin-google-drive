@@ -1,9 +1,8 @@
 import {definePlugin} from 'sanity'
-import {assertPluginConfig} from './assertPluginConfig'
-import {file} from './file'
-import {fileAsset} from './fileAsset'
-import {createFormInput} from './FormInput'
-import type {GoogleDrivePluginConfig} from './googleDrivePluginConfig'
+import type {GoogleDrivePluginConfig} from './types'
+import {createFormInput} from './components'
+import {assertPluginConfig} from './helpers'
+import {file, fileAsset} from './schema'
 
 // eslint-disable-next-line no-warning-comments
 // TODO: split up plugin into asset source and schema @see `sanity-plugin-cloudinary`
@@ -40,11 +39,3 @@ export const googleDrive = definePlugin<Partial<GoogleDrivePluginConfig>>((confi
     },
   }
 })
-
-export interface FileAsset {
-  mimeType: string
-  url: string
-  size: number
-  assetId: string
-  extension: string
-}

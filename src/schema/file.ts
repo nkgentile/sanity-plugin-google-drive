@@ -1,16 +1,6 @@
-import {defineType, defineField, type ObjectDefinition} from 'sanity'
+import {defineType, defineField} from 'sanity'
 
 export const FILE = 'googleDrive.file' as const
-
-export type GoogleDriveFileDefinition = Omit<ObjectDefinition, 'type'> & {
-  type: typeof FILE
-}
-
-declare module 'sanity' {
-  export interface IntrinsicDefinitions {
-    'googleDrive.file': GoogleDriveFileDefinition
-  }
-}
 
 export const file = defineType(
   {

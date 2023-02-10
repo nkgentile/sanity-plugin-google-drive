@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-interface AspectRatioProps {
+type AspectRatioProps = {
   /**
    * The width divided by the height. This ratio can be passed in
    * using JavaScript division syntax. So, to get a 16:9 ratio,

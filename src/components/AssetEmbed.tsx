@@ -1,7 +1,7 @@
 import React, {memo, useMemo} from 'react'
 import {Card, Flex, Grid, Stack, Text} from '@sanity/ui'
+import type {AssetPreviewProps} from '../types'
 import {AspectRatio} from './AspectRatio'
-import {AssetPreviewProps} from './AssetPreviewProps'
 import {GoogleDriveButton} from './GoogleDriveButton'
 
 const EmptyAsset = memo(function EmptyAsset() {

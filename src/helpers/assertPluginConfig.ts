@@ -1,4 +1,4 @@
-import {GoogleDrivePluginConfig} from './googleDrivePluginConfig'
+import {GoogleDrivePluginConfig} from '../types'
 
 export function assertPluginConfig(
   config: Partial<GoogleDrivePluginConfig>
