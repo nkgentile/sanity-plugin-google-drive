@@ -10,18 +10,30 @@ npm install --save sanity-plugin-google-drive
 
 ## Usage
 
+There are two plugins in this package:
+
+- `googleDrive` - use this if you intend to use references to assets in Google Drive
+- `googleDriveAssetSource` - use this if you intend to pick assets from Google Drive and import into Sanity
+
 Add it as a plugin in sanity.config.ts (or .js):
 
 ```
- import {defineConfig} from 'sanity'
- import {googleDrive} from 'sanity-plugin-google-drive'
+import {defineConfig} from 'sanity'
+import {googleDrive, googleDriveAssetSource} from 'sanity-plugin-google-drive'
 
- export const defineConfig({
-     //...
-     plugins: [
-         googleDrive({})
-     ]
- })
+export const defineConfig({
+  //...
+  plugins: [
+    googleDrive({
+      apiKey: API_KEY,
+      clientId: CLIENT_ID,
+    }),
+    googleDriveAssetSource({
+      apiKey: API_KEY,
+      clientId: CLIENT_ID,
+    })
+  ]
+})
 ```
 
 ## License

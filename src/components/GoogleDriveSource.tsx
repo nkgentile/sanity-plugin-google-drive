@@ -79,3 +79,6 @@ export function GoogleDrivePicker(props: GoogleDrivePickerProps) {
 
   return null
 }
+
+// NOTE: Support lazy-loading via `React.lazy`
+export {GoogleDrivePicker as default}
