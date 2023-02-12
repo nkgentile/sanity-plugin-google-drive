@@ -5,6 +5,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/nkgentile/sanity-plugin-google-drive/compare/v1.0.1...v1.1.0) (2023-02-12)
+
+### Features
+
+- splitting plugins into schema and source ([744548e](https://github.com/nkgentile/sanity-plugin-google-drive/commit/744548eec19229fb4cd4ec6b0bf52abd400f5dfd))
+
 ## [1.0.1](https://github.com/nkgentile/sanity-plugin-google-drive/compare/v1.0.0...v1.0.1) (2023-01-04)
 
 ### Bug Fixes
